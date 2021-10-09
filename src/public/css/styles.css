@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--colorYellow);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  box-sizing:border-box;
+}
+
+:root { 
+  --colorWhite:hsl(0, 0%, 100%); 
+  --colorYellow: #EAC926;
+  --colorDarkBlue: #03264C;
+  --colorLightBlue: #1259c3;
+  --colorDarkGray: #666;
+  --colorLightGray : #ebebeb;
+  --colorGreen: #39b54a;
+}
+
+.main .content__title{
+  font-size: 24px;
+}
+
+.main-content__access .item__price{
+  font-size: 18px;
+}
+
+.main-content__access .item__offer{
+  font-size: 16px;
+}
+
+.main-content__access .item__title{
+  font-size: 16px;
+}
