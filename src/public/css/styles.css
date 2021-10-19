@@ -114,7 +114,7 @@ body {
   font-size: 24px;
 }
 
-.main-content__access .item__price{
+.main-content__access .item__price {
   font-size: 18px;
 }
 
@@ -146,10 +146,21 @@ body {
 
 .footer .icon-footer{
   color: var(--colorLightBlue);
+  font-size: 2rem;
+  margin: 1rem 0rem;
 }
 
 .footer .content{
   margin: 1.5rem 0rem;
+}
+
+.footer .content__title, .content__copyright{
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+
+.footer .content__copyright{
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 361px){
@@ -226,6 +237,6 @@ body {
   }
   .footer .content{
     margin: auto;
-    max-width: 35rem;
+    max-width: 30rem;
   }
 }
