@@ -169,6 +169,9 @@ body {
   .navigation-header__down .nav .nav-list li{
     margin: 0rem 0.2rem;
   } 
+  .navigation-header__down .nav .nav-list i{
+    margin: 0rem 0.2rem;
+  } 
   .content-vist__item .main-content__access{
     box-shadow: 1rem 1rem 2.5rem -2rem rgba(0,0,0,0.75);
   }
@@ -178,4 +181,18 @@ body {
   body {
     background-color: greenyellow;
   } 
+  .navigation-header__up .image__logo {
+    width: 14rem;
+  }
+  .navigation-header__up, .navigation-header__down {
+    max-width: 800px;
+    margin: auto;
+  }
+  .navigation-header__up .info {
+    max-width: none;
+    align-items: center;
+  }
+  .navigation-header__up {
+    align-items: center;
+  }
 }
