@@ -21,13 +21,16 @@ body {
   font-size: 12px;
 }
 
-.wrapper {
-  
+/*div{
+  background-color: rebeccapurple;
+  display: inline;
+.wrapper {  
 }
+}*/
 
 .header-main {
   background-color: var(--colorYellow);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 1rem;
 }
 
@@ -36,9 +39,8 @@ body {
   margin: auto;
 }
 
-.icon-nav .info {
+.info {
   text-align: center;
-  /*margin: 0.5rem 0rem;*/
 }
 
 .navigation-header__up .nav {
@@ -138,6 +140,10 @@ body {
   body {
     background-color: red;
   }
+  .navigation-header__up .image__logo {
+    width: 12rem;
+    margin: 0rem;
+  }
   .header-main .burger-menu{
     display: none;
   }
@@ -149,10 +155,20 @@ body {
     max-width: 12rem;
     text-align: right;
   }
-  .navigation-header__down .nav{
+  .navigation-header__down {
     display: flex;
     justify-content: space-between;
   }  
+  .navigation-header__down .nav{
+    display: flex;
+    justify-content: space-between;
+  } 
+  .navigation-header__down .nav .nav-list{
+    display: flex;
+  } 
+  .navigation-header__down .nav .nav-list li{
+    margin: 0rem 0.2rem;
+  } 
   .content-vist__item .main-content__access{
     box-shadow: 1rem 1rem 2.5rem -2rem rgba(0,0,0,0.75);
   }
