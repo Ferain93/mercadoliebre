@@ -133,6 +133,24 @@ body {
   margin-top: 1rem;
 } 
 /*/main-home*/
+/*main-register*/
+.main .main-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .form {
+  width: 60%;
+  margin: auto; 
+  text-align: center; 
+  background-color: var(--colorWhite);
+  padding: 0.8rem;
+  margin:  1.2rem 0rem;
+  border: 1px solid var(--colorLightGray);
+}
+/*/main-register*/
+/*main-login*/
+/*/main-login*/
 /*footer*/
 .footer {
   padding: 2rem;
