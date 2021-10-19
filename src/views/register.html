@@ -75,44 +75,49 @@
       <main class="main">
 
         <div class="main-form">
+
           <h2 class="title-form">Crear Cuenta</h2>
 
           <form action="/create-user" method="POST" class="form">
             <div class="control-form">
-              <input type="text" name="name__user" placeholder="Nombre y Apellido" class="control">
+              <input type="text" name="name__user" placeholder="Nombre y Apellido" class="control" required>
             </div>
             <div class="control-form">
-              <input type="text" name="nickname__user" placeholder="Nombre de Usuario" class="control">
+              <input type="text" name="nickname__user" placeholder="Nombre de Usuario" class="control" required>
             </div>
             <div class="control-form">
-              <input type="date" name="birth__user" placeholder="Fecha de Nacimiento" class="control">
+              <label class="control-info">Fecha de Nacimiento</label>
+              <input type="date" name="birth__user" placeholder="Fecha de Nacimiento" class="control"
+              required>
             </div>
             <div class="control-form">
-              <input type="text" name="address__user" placeholder="Dirección" class="control">
+              <input type="text" name="address__user" placeholder="Dirección" class="control" required>
             </div>
             <div class="control-form">
-              <label>Perfil de Usuario</label>
-              <select name="perfil">
-                <option value="comprador">Comprador</option>
-                <option value="vendedor">Vendedor</option>
+              <label class="control-info">Perfil de Usuario</label>
+              <select name="profile" class="control" required>
+                <option value="buyer">Comprador</option>
+                <option value="seller">Vendedor</option>
               </select>
             </div>
-            <div class="control-form">
-              <label>Categorías de interés</label>
-                <label>Electro<input type="checkbox" name="categoria-electro__user" class="control"></label>
-                <label>Moda<input type="checkbox" name="categoria-moda__user" class="control"></label>
-                <label>Hogar<input type="checkbox" name="categoria-hogar__user" class="control"></label>
-                <label>Juguetería<input type="checkbox" name="categoria-jugueteria__user" class="control"></label>
-                <label>Vida Sana<input type="checkbox" name="categoria-vida__user" class="control"></label>
+            <div class="control-form__category">
+              <label class="control-info">Categorías de interés:</label><br>
+                <label class="control-info">Electro<input type="checkbox" name="category-electro__user" class="control" required></label><br>
+                <label class="control-info">Moda<input type="checkbox" name="category-moda__user" class="control" required></label><br>
+                <label class="control-info">Hogar<input type="checkbox" name="category-hogar__user" class="control"></label required><br>
+                <label class="control-info">Juguetería<input type="checkbox" name="category-jugueteria__user" class="control" required></label><br>
+                <label class="control-info">Vida Sana<input type="checkbox" name="category-vida__user" class="control" required></label>
             </div>
             <div class="control-form">
-              <input type="password" name="password__user" placeholder="Contraseña" class="control">
+              <input type="password" name="password__user" placeholder="Contraseña" class="control" required>
             </div>
             <div class="control-form">
-              <input type="password" name="password-confirm__user" placeholder="Confirmar Contraseña" class="control">
+              <input type="password" name="password-confirm__user" placeholder="Confirmar Contraseña" class="control" required>
             </div>
-            <button type="reset" class="button-form__reset">Borrar</button>
-            <button type="submit" class="button-form__submit">Enviar</button>
+            <div class="control-form">
+              <button type="reset" class="button-form__reset">Borrar</button>
+              <button type="submit" class="button-form__submit">Enviar</button>
+            </div>  
           </form>
         </div>
       </main>

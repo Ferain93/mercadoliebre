@@ -72,7 +72,7 @@ body {
   font-size: 1rem;
 }
 
-.burger-menu a{
+.burger-menu a {
   text-decoration: none;
   color: var(--colorWhite);
 }
@@ -85,7 +85,7 @@ body {
   padding: 1rem;
 }
 
-.content-vist__item .main-content__access, .content-offer__item .main-content__access{
+.content-vist__item .main-content__access, .content-offer__item .main-content__access {
   width: 90%;
   margin: auto;  
   background-color: var(--colorWhite);
@@ -94,11 +94,11 @@ body {
   border: 1px solid var(--colorLightGray);
 }
 
-.main-content__access img{
+.main-content__access img {
   width: 90%;
 }
 
-.main-content__access .icon-truck .fas{
+.main-content__access .icon-truck .fas {
   color: var(--colorGreen);
   border-radius: 50%;
   border: 1px solid var(--colorGreen);
@@ -106,7 +106,7 @@ body {
   margin: 0rem;
 }
 
-.main .content__title{
+.main .content__title {
   font-size: 24px;
 }
 
@@ -139,6 +139,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+.main-form .title-form {
+  font-size: 1.5rem;
+}
+
 .main .form {
   width: 60%;
   margin: auto; 
@@ -146,7 +151,49 @@ body {
   background-color: var(--colorWhite);
   padding: 0.8rem;
   margin:  1.2rem 0rem;
-  border: 1px solid var(--colorLightGray);
+  border: .2rem solid var(--colorLightGray);
+  box-shadow: 1rem 1rem 2.5rem -2rem rgba(0,0,0,0.75);
+  border-radius: .5rem;
+}
+
+.control-form .control{
+  width: 80%;
+  background-color: var(--colorWhite);
+  color: var(--colorDarkGray);
+  padding: .5rem;
+  border-radius: .5rem;
+  margin: 1rem;
+  border: .15rem solid var(--colorDarkBlue);
+  font-size: 1rem;
+}
+
+.control-form .control-info{
+  width: 80%;
+  color: var(--colorDarkGray);
+  padding: .5rem;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.control-form__category .control-info{
+  width: 80%;
+  color: var(--colorDarkGray);
+  padding: .5rem;
+  border-radius: .5rem;
+  margin: 1rem 0rem;
+  font-size: 1rem;
+}
+
+.control-form .button-form__reset, .control-form .button-form__submit{
+  width: 80%;
+  background-color: var(--colorLightBlue);
+  color: var(--colorWhite);
+  padding: .5rem;
+  border-radius: .5rem;
+  margin: 1rem;
+  border: .15rem solid var(--colorDarkBlue);
+  font-size: 1rem;
 }
 /*/main-register*/
 /*main-login*/
