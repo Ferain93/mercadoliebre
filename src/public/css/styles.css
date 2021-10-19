@@ -86,9 +86,10 @@ body {
   width: 100%;
   margin: auto;  
   background-color: var(--colorLightGray);
+  padding: 1rem;
 }
 
-.content-vist__item .main-content__access{
+.content-vist__item .main-content__access, .content-offer__item .main-content__access{
   width: 90%;
   margin: auto;  
   background-color: var(--colorWhite);
@@ -108,32 +109,47 @@ body {
   padding: .2rem;
   margin: 0rem;
 }
+
 .main .content__title{
   font-size: 24px;
 }
 
 .main-content__access .item__price{
   font-size: 18px;
-  
 }
 
 .main-content__access .item__offer{
   font-size: 16px;
   color: var(--colorGreen);
+  margin: 0rem 1rem;
 }
 
 .main-content__access .item__title{
   font-size: 16px;
+  margin: 1rem 0rem;
+  color: var(--colorDarkGray);
 }
+
+.main-content__access .item__status{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+} 
 
 .footer {
   padding: 2rem;
   background-color: var(--colorWhite);
   margin: auto;
+  text-align: center;
 }
 
 .footer .icon-footer{
   color: var(--colorLightBlue);
+}
+
+.footer .content{
+  margin: 1.5rem 0rem;
 }
 
 @media (min-width: 361px){
@@ -175,8 +191,14 @@ body {
   .content-vist__item .main-content__access{
     box-shadow: 1rem 1rem 2.5rem -2rem rgba(0,0,0,0.75);
   }
+  .content-vist__item, .content-offer__item{
+    display: flex;
+    flex-wrap : wrap;
+  }
+  .content-vist__item .main-content__access, .content-offer__item .main-content__access {
+    flex-basis: 50%;
+  }
 }
-
 @media (min-width: 769px){
   body {
     background-color: greenyellow;
@@ -185,7 +207,7 @@ body {
     width: 14rem;
   }
   .navigation-header__up, .navigation-header__down {
-    max-width: 800px;
+    max-width: 67rem;
     margin: auto;
   }
   .navigation-header__up .info {
@@ -194,5 +216,16 @@ body {
   }
   .navigation-header__up {
     align-items: center;
+  }
+  .content-vist__item, .content-offer__item{
+    display: flex;
+    flex-wrap : wrap;
+  }
+  .content-vist__item .main-content__access, .content-offer__item .main-content__access {
+    flex-basis: 25%;
+  }
+  .footer .content{
+    margin: auto;
+    max-width: 35rem;
   }
 }
