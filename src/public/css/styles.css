@@ -197,6 +197,20 @@ body {
   font-size: 1rem;
 }
 
+.control-info__check{
+  display: flex;
+  flex-wrap : wrap;
+  margin: auto;
+}
+
+.control-info__check .control-info{
+  width: 100%;
+  margin: 0rem;
+}
+.control-info__check .control {
+  margin: 0rem 0.5rem;
+}
+
 .control-form .button-form__reset:hover, .control-form .button-form__submit:hover{
   background-color: var(--colorBlueButton);
 }
