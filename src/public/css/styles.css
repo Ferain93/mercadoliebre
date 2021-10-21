@@ -271,7 +271,7 @@ body {
   .navigation-header__down .nav .nav-list i{
     margin: 0rem 0.2rem;
   } 
-  .content-vist__item .main-content__access, .content-offer__item .main-content__access{
+  .content-vist__item .main-content__access:hover, .content-offer__item .main-content__access:hover{
     box-shadow: 1rem 1rem 2.5rem -2rem rgba(0,0,0,0.75);
   }
   .content-vist__item, .content-offer__item{
@@ -302,6 +302,9 @@ body {
   .navigation-header__up {
     align-items: center;
   }
+  .header-main .control-form {
+    max-width: 25rem;
+  }
   .content-vist__item, .content-offer__item{
     display: flex;
     flex-wrap : wrap;
@@ -309,6 +312,12 @@ body {
   .content-vist__item .main-content__access, .content-offer__item .main-content__access {
     flex-basis: 25%;
     /*margin: 0rem 0.2rem 0rem 0.2rem;*/
+  }
+  .main-content__access .item__title{
+    display: none;
+  }
+  .main-content__access:hover .item__title{
+    display: block;
   }
   .footer .footer-content {
     display: flex;
