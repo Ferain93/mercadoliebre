@@ -53,10 +53,10 @@
           <nav class="nav">
             <ul class="nav-list" type=None>
               <li>
-                <a href="">Creá tu cuenta<i class="far fa-id-card"></i></a>
+                <a href="/register">Creá tu cuenta<i class="far fa-id-card"></i></a>
               </li>
               <li>
-                <a href="">Ingresá<i class="fas fa-sign-in-alt"></i></a>
+                <a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a>
               </li>
               <li>
                 <a href="">Mis compras<i class="fas fa-shopping-basket"></i></a>
@@ -74,15 +74,25 @@
 
       <main class="main">
 
-        <form action="/create-user" method="POST">
-          <div class="control-form">
-            <input type="text" name="nickname__user" placeholder="Nombre de Usuario" class="control">
-          </div>
-          <div class="control-form">
-            <input type="password" name="password__user" placeholder="Contraseña" class="control">
-          </div>
-        </form>
-        <button type="submit" class="button-form">Enviar</button>
+        <div class="main-form">
+
+          <h2 class="title-form">Iniciar Sesión</h2>
+
+          <form action="/login-user" method="POST" class="form">
+
+            <div class="control-form">
+              <input type="text" name="nickname__user" placeholder="Nombre de Usuario" class="control" required>
+            </div>
+            <div class="control-form">
+              <input type="password" name="password__user" placeholder="Contraseña" class="control" required>
+            </div>
+            <div class="control-form">
+              <button type="submit" class="button-form__submit">Enviar</button>
+            </div>
+
+          </form>
+
+        </div>       
 
       </main>
 

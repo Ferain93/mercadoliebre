@@ -15,6 +15,7 @@
   --colorGreen: #39b54a;
   --colorBlack: black;
   --colorGray: #222222;
+  --colorBlueButton :#0022AA; 
 }
 
 body {
@@ -195,6 +196,10 @@ body {
   border: .15rem solid var(--colorDarkBlue);
   font-size: 1rem;
 }
+
+.control-form .button-form__reset:hover, .control-form .button-form__submit:hover{
+  background-color: var(--colorBlueButton);
+}
 /*/main-register*/
 /*main-login*/
 /*/main-login*/
@@ -212,6 +217,10 @@ body {
   margin: 1rem 0rem;
 }
 
+.footer .icon-footer:hover{
+  color: var(--colorDarkBlue);
+}
+
 .footer .content{
   margin: 1.5rem 0rem;
 }
@@ -226,7 +235,7 @@ body {
 }
 /*/footer*/
 /*responsive tablet*/
-@media (min-width: 361px){
+@media (min-width: 481px){
   body {
     background-color: red;
   }
@@ -262,7 +271,7 @@ body {
   .navigation-header__down .nav .nav-list i{
     margin: 0rem 0.2rem;
   } 
-  .content-vist__item .main-content__access{
+  .content-vist__item .main-content__access, .content-offer__item .main-content__access{
     box-shadow: 1rem 1rem 2.5rem -2rem rgba(0,0,0,0.75);
   }
   .content-vist__item, .content-offer__item{
@@ -299,6 +308,10 @@ body {
   }
   .content-vist__item .main-content__access, .content-offer__item .main-content__access {
     flex-basis: 25%;
+    /*margin: 0rem 0.2rem 0rem 0.2rem;*/
+  }
+  .footer .footer-content {
+    display: flex;
   }
   .footer .content{
     margin: auto;
