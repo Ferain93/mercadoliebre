@@ -99,12 +99,20 @@ body {
   width: 90%;
 }
 
+.main-content__access {  
+  position: relative;
+}
+
 .main-content__access .icon-truck .fas {
   color: var(--colorGreen);
   border-radius: 50%;
   border: 1px solid var(--colorGreen);
   padding: .2rem;
   margin: 0rem;
+  transition: 2s all;
+  position: absolute;
+  right: 2rem;
+  bottom: 3rem;
 }
 
 .main .content__title {
@@ -326,6 +334,9 @@ body {
   .content-vist__item .main-content__access, .content-offer__item .main-content__access {
     flex-basis: 25%;
     /*margin: 0rem 0.2rem 0rem 0.2rem;*/
+  }
+  .main-content__access .icon-truck .fas:hover {
+    transform: rotate(-90deg);
   }
   .main-content__access .item__title{
     display: none;
