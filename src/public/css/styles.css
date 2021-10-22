@@ -44,6 +44,11 @@ body {
   display: none;
 }
 
+.burger-menu:hover .navigation-header__up .nav{
+  margin: 1rem 0rem;
+  display: block;
+}
+
 .navigation-header__down .nav .nav-list {
   list-style: none;
 }
