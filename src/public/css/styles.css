@@ -96,8 +96,9 @@ body {
   margin: auto;  
   background-color: var(--colorWhite);
   padding: 0.8rem;
-  margin:  1.2rem 0rem;
-  border: 1px solid var(--colorLightGray);
+  margin-top: 1rem;
+  border: 0.3rem solid var(--colorLightGray);
+  border-radius: 10%;
 }
 
 .main-content__access img {
