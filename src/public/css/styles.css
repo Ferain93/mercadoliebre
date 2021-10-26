@@ -82,6 +82,15 @@ body {
   text-decoration: none;
   color: var(--colorWhite);
 }
+
+.hero img{
+  width: 100vw;
+  margin: auto; 
+  padding: 0rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 /*/header*/
 /*main-home*/
 .main {
@@ -264,9 +273,6 @@ body {
 /*/footer*/
 /*responsive tablet*/
 @media (min-width: 481px){
-  body {
-    background-color: red;
-  }
   .navigation-header__up .image__logo {
     width: 12rem;
     margin: 0rem;
@@ -313,9 +319,6 @@ body {
 /*/responsive tablet*/
 /*responsive desktop*/
 @media (min-width: 769px){
-  body {
-    background-color: greenyellow;
-  } 
   .navigation-header__up .image__logo {
     width: 14rem;
   }
